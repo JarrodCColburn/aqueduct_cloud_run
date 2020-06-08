@@ -20,7 +20,7 @@ ADD config.yaml /config.yaml
 ENTRYPOINT ["/serve","--config-path=/config.yaml","--port=8080","--address=0.0.0.0"]
 # Service must listen to $PORT environment variable.
 # This default value facilitates local development.
-ENV PORT 8080
+EXPOSE 8080
 
 # TODO should set flag `--timeout=n` for entrypoint? What's a good n value?
 
